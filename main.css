@@ -1,5 +1,4 @@
 :root {
-    /* --primary-color: #FCFF8A; */
     --primary-color: rgba(0, 0, 0, 0.8);
     --text-color: #262626;
 
@@ -23,9 +22,6 @@ html {
 }
 
 #container {
-    /* 601,7 - 284px Pixel */
-    /* 633,6 - 288 Pixel */
-    /* background-color: var(--primary-color); */
     max-width: 480px;
     margin: 0 auto; 
 }
