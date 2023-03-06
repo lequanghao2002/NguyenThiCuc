@@ -29,5 +29,19 @@ function giftFunction() {
     confirm("Bấm dô tấm ảnh á")
 }
 
+// var audio = document.querySelector('#audio');
+
+// function play() {
+//     audioElement.play();
+// }
+
+const audioSrc = './assets/musics/SinhNhat.mp3';
+const audio = new Audio(audioSrc);
+
+window.onload = function() {
+    audio.addEventListener('loadedmetadata', function() {
+        audio.play();
+    })
+}
 
 
