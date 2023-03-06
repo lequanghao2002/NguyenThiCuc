@@ -1,5 +1,6 @@
 :root {
-    --primary-color: #FCFF8A;
+    /* --primary-color: #FCFF8A; */
+    --primary-color: rgba(0, 0, 0, 0.8);
     --text-color: #262626;
 
     --cake-primary: #672112;
@@ -45,22 +46,20 @@ ul {
     margin-top: 10px;
 }
 
-li {
-    list-style: none;
-    float: left;
-    font-size: 40px;
-    position: relative;
-    font-weight: 900;
-}
-
 .name {
     font-size: 34px;
 }
 
 ul li
 {
-    content: attr(data-title);
-    color: var(--text-color);
+    color: #fff ;
+    list-style: none;
+    float: left;
+    font-size: 40px;
+    position: relative;
+    font-weight: 900;
+
+    animation: colors 20s infinite !important;
 }
 
 ul li:nth-child(odd) {
@@ -249,6 +248,7 @@ ul li:nth-child(even) {
     background-color: rgba(252,191,73,.8);
     transition: .5s;
     animation: flame .5s infinite;
+    box-shadow: 10px -10px 15px rgba(247, 127, 0, 0.4);   
 }
   
 .flame {
@@ -284,6 +284,7 @@ ul li:nth-child(even) {
     align-items: center;
     min-height: 80vh;
     background-color: #0081a7;
+    background-color: rgba(255, 190, 118, 0.4);
     padding-top: 125px;
     padding-bottom: 145px;
 }
@@ -348,6 +349,8 @@ ul li:nth-child(even) {
     font-size: 50px;
     position: absolute;
     bottom: 40px;
+
+    cursor: pointer;
 
     animation: zoom 0.5s infinite alternate linear;
 
@@ -414,9 +417,16 @@ ul li:nth-child(even) {
     transform: rotateY(-180deg);
 }
 
+
+
+
 @keyframes flame {
-    0%, 25%, 100% {transform: scaleY(1) rotate(-45deg);}
-    50%, 75% {transform: scaleY(1.1) rotate(-45deg);}
+    0%, 25%, 100% {
+        transform: scaleY(1) rotate(-45deg);
+    }
+    50%, 75% {
+        transform: scaleY(1.1) rotate(-45deg);
+    }
 }
 
 @keyframes animateEven {
@@ -475,5 +485,25 @@ ul li:nth-child(even) {
     }
 }
 
-
+@keyframes colors {
+    0% {
+        text-shadow: 0 0 2rem rgba(14, 198, 81, 0.5);
+    }
+    20% {
+        text-shadow: 0 0 2rem rgb(244, 205, 11);
+    }
+    40% {
+        text-shadow: 0 0 2rem rgb(245, 137, 14);
+    }
+    60% {
+        text-shadow: 0 0 2rem rgb(242, 21, 21);
+    }
+    80% {
+        text-shadow: 0 0 2rem rgb(209, 9, 249);
+    }
+    100% {
+        text-shadow: 0 0 2rem rgb(11, 23, 243);
+    }
+    
+}
 

@@ -28,3 +28,6 @@ setInterval(function next() {
 function giftFunction() {
     confirm("Bấm dô tấm ảnh á")
 }
+
+
+
