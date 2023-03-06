@@ -95,28 +95,28 @@
             </div>
         </div>
 
-        <audio  id="audio" src="./assets/musics/SinhNhat.mp3"></audio>
+        <audio  id="audio" src="./assets/musics/SinhNhat.mp3" controls autoplay></audio>
 
     </div>
 
-    <script src="./main.js"></script>
     <script src="./confetti.js"></script>
     <script>
         const start = () => {
             setTimeout(function() {
-                    confetti.start();
-                }, 1000);
+                confetti.start();
+            }, 1000);
         }
-
+        
         const stop = () => {
             setTimeout(function() {
-                    confetti.stop();
-                }, 5000);
+                confetti.stop();
+            }, 5000);
         }
-
+        
         start();
         stop();
-    </script>
+        </script>
+        <script src="./main.js"></script>
 
 </body>
 </html>

@@ -413,8 +413,9 @@ ul li:nth-child(even) {
     transform: rotateY(-180deg);
 }
 
-
-
+#audio {
+    width: 100%;
+}
 
 @keyframes flame {
     0%, 25%, 100% {
