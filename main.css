@@ -54,19 +54,17 @@ ul li
     font-size: 40px;
     position: relative;
     font-weight: 900;
-
-    animation: colors 20s infinite !important;
 }
 
 ul li:nth-child(odd) {
     top: 2px;
-    animation: animateOdd 3s linear infinite;
+    animation: animateOdd 3s linear infinite, colors 20s infinite;
 }
 
 
 ul li:nth-child(even) {
     top: -2px;
-    animation: animateEven 3s linear infinite;
+    animation: animateEven 3s linear infinite , colors 20s infinite;
 } 
 
 #birthday {
