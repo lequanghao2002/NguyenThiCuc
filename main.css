@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
 :root {
     --primary-color: rgba(0, 0, 0, 0.8);
     --text-color: #262626;
@@ -18,7 +20,7 @@ body {
   
 html {
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Rampart One', cursive;
 }
 
 #container {
@@ -53,7 +55,6 @@ ul li
     float: left;
     font-size: 40px;
     position: relative;
-    font-weight: 900;
 }
 
 ul li:nth-child(odd) {
@@ -277,8 +278,7 @@ ul li:nth-child(even) {
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    background-color: #0081a7;
-    background-color: rgba(255, 190, 118, 0.4);
+    background-color: rgba(255, 190, 118, 0.8);
     padding-top: 125px;
     padding-bottom: 145px;
 }
@@ -482,23 +482,21 @@ ul li:nth-child(even) {
 
 @keyframes colors {
     0% {
-        text-shadow: 0 0 2rem rgba(14, 198, 81, 0.5);
+        text-shadow: 0 0 1rem rgba(14, 198, 81, 0.5);
     }
     20% {
-        text-shadow: 0 0 2rem rgb(244, 205, 11);
+        text-shadow: 0 0 1rem rgb(244, 205, 11);
     }
     40% {
-        text-shadow: 0 0 2rem rgb(245, 137, 14);
+        text-shadow: 0 0 1rem rgb(245, 137, 14);
     }
     60% {
-        text-shadow: 0 0 2rem rgb(242, 21, 21);
+        text-shadow: 0 0 1rem rgb(242, 21, 21);
     }
     80% {
-        text-shadow: 0 0 2rem rgb(209, 9, 249);
+        text-shadow: 0 0 1rem rgb(209, 9, 249);
     }
     100% {
-        text-shadow: 0 0 2rem rgb(11, 23, 243);
+        text-shadow: 0 0 1rem rgb(11, 23, 243);
     }
-    
 }
-
